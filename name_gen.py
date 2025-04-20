@@ -39,7 +39,7 @@ def get_type_f_syl(syls, vow):
     con = random.choice(allowed_type_f_cons)
     return Syllable("f",con,vow)
 
-def get_kobold_word(english_word):
+def get_kobold_name(english_word):
 
     random.seed(english_word)
 

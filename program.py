@@ -1,4 +1,4 @@
-import word_gen
+import name_gen
 
 language_words = []
 
@@ -14,7 +14,7 @@ output_file.write("\n")
 output_file.write("[TRANSLATION:KOBOLD]\n")
 
 for language_word in language_words:
-    kobold_word = word_gen.get_kobold_word(language_word)
+    kobold_word = name_gen.get_kobold_name(language_word)
     output_file.write(f"\t[T_WORD:{language_word}:{kobold_word}]\n")
 
 output_file.close()
